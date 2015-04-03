@@ -96,7 +96,47 @@ func assets_css_common_bootstrap_min_css_min() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindata_file_info{name: "assets/css/common/bootstrap.min.css.min", size: 117151, mode: os.FileMode(420), modTime: time.Unix(1428032990, 0)}
+	info := bindata_file_info{name: "assets/css/common/bootstrap.min.css.min", size: 117151, mode: os.FileMode(420), modTime: time.Unix(1428033016, 0)}
+	a := &asset{bytes: bytes, info:  info}
+	return a, nil
+}
+
+var _assets_css_common_wl_thema_css = []byte("\x1f\x8b\x08\x00\x00\x09\x6e\x88\x00\xff\x01\x00\x00\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00")
+
+func assets_css_common_wl_thema_css_bytes() ([]byte, error) {
+	return bindata_read(
+		_assets_css_common_wl_thema_css,
+		"assets/css/common/wl-thema.css",
+	)
+}
+
+func assets_css_common_wl_thema_css() (*asset, error) {
+	bytes, err := assets_css_common_wl_thema_css_bytes()
+	if err != nil {
+		return nil, err
+	}
+
+	info := bindata_file_info{name: "assets/css/common/wl-thema.css", size: 0, mode: os.FileMode(420), modTime: time.Unix(1428033016, 0)}
+	a := &asset{bytes: bytes, info:  info}
+	return a, nil
+}
+
+var _assets_css_common_wl_thema_css_min = []byte("\x1f\x8b\x08\x00\x00\x09\x6e\x88\x00\xff\x01\x00\x00\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00")
+
+func assets_css_common_wl_thema_css_min_bytes() ([]byte, error) {
+	return bindata_read(
+		_assets_css_common_wl_thema_css_min,
+		"assets/css/common/wl-thema.css.min",
+	)
+}
+
+func assets_css_common_wl_thema_css_min() (*asset, error) {
+	bytes, err := assets_css_common_wl_thema_css_min_bytes()
+	if err != nil {
+		return nil, err
+	}
+
+	info := bindata_file_info{name: "assets/css/common/wl-thema.css.min", size: 0, mode: os.FileMode(420), modTime: time.Unix(1428033018, 0)}
 	a := &asset{bytes: bytes, info:  info}
 	return a, nil
 }
@@ -236,12 +276,12 @@ func assets_css_index_css() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindata_file_info{name: "assets/css/index.css", size: 1979, mode: os.FileMode(420), modTime: time.Unix(1428029995, 0)}
+	info := bindata_file_info{name: "assets/css/index.css", size: 1979, mode: os.FileMode(420), modTime: time.Unix(1428033019, 0)}
 	a := &asset{bytes: bytes, info:  info}
 	return a, nil
 }
 
-var _assets_css_index_css_min = []byte("\x1f\x8b\x08\x00\x00\x09\x6e\x88\x00\xff\x94\x54\x0d\x6f\xdb\x20\x10\xfd\x2b\x5e\xa3\x49\xad\x54\x5c\x27\x6d\x2a\x17\x4b\xfd\x2f\x04\x5f\xec\x5b\x6d\x40\x70\x6e\xd2\x45\xf9\xef\x03\x7f\xa4\x90\x56\xda\x16\x47\x4a\xe0\x1e\xef\xde\xbb\x3b\xbc\x22\x6d\xd8\x4e\x1f\x4f\x2d\x60\xd3\x12\x7f\x2c\x0a\x73\xac\x76\x42\xbe\x35\x56\x0f\xaa\x66\xd8\x8b\x06\xf8\x60\xbb\xdb\x9b\x07\xec\x9b\x07\x8f\xcf\x7f\x99\xe6\xe6\x2e\x06\x19\xed\x90\x50\x2b\x2e\x41\x11\xd8\x6c\xfa\x89\x11\x16\x0c\x08\xe2\x4a\xcf\xff\xe2\x98\x20\x12\xb2\xed\xfd\x19\xbe\xc7\x23\xd4\x71\xcc\xe1\x6f\xe0\x52\xbf\xa7\x6c\x52\x77\xda\xf2\xd5\xd3\x73\x78\xce\x2b\x29\x48\xb6\x7e\xd3\x7c\x9c\xe6\xc8\xde\x7f\x64\x59\x11\x1c\x89\xb9\x56\xd4\xfa\xc0\x8b\xac\xc8\x36\xe6\x98\xad\x5e\x76\x8f\x9b\xa2\xb8\xff\xcf\x75\xd5\x0b\xdb\xa0\xf2\x34\x62\x20\x3d\x31\x8b\x0e\x9b\xc5\x73\x65\x44\x5d\xa3\x6a\x98\x2f\x10\x5f\x87\x22\x2e\x1b\x1d\xec\x89\x6f\xfc\xce\x79\xd5\x69\x4f\x31\x96\x7b\x0e\x4e\xc8\x94\xfa\x80\x35\xb5\xfc\xa5\xf8\xf9\x4d\x92\x9d\xb6\x35\x58\x66\x45\x8d\x83\xe3\x4f\x49\xab\xb8\x6d\x76\xe2\x36\x48\x5f\x6f\x8b\x7b\xff\x2d\xf2\xf2\x2e\xca\x99\xa1\x32\x03\x9d\xbe\x90\xc6\x90\x1a\xdf\x73\xd9\x82\x7c\x0b\x1a\x27\x59\xa3\xa1\xcd\xa7\x4c\x8f\x23\xd2\xfd\xec\x48\x6a\x4f\xa1\xc8\x2d\x86\x96\xe8\x76\x8c\x36\x03\x38\x62\xbe\xb3\xc3\xd7\xb4\xd5\x5f\x4e\x8c\x5a\x1c\x74\x20\x09\xea\xa5\xaf\xb2\x94\x65\x51\x24\xb0\xfc\xe0\x6b\xc2\x1c\x08\x2b\xdb\x53\x54\x0d\x8f\x0d\x33\x90\x62\x1b\x50\x16\x12\x54\xc0\x5c\xa3\x54\xb8\x0b\xbe\xd4\x57\x74\x81\x30\x05\x5e\xdc\x47\xa5\x62\x5f\x8c\x5c\x60\xaf\xde\xd2\xa7\x93\x71\x42\xe3\x6b\x77\xce\x03\x9c\x21\x41\x7f\xaa\xd1\x99\x4e\x7c\x70\x54\x1d\x2a\x60\xbb\x4e\xcb\xb7\x05\x5c\x86\x66\x4c\x53\x52\xc6\x83\x76\x69\x54\x3a\x25\xdb\x6f\x27\x49\x0e\xd6\x79\x1d\x46\xe3\xb8\x9c\x47\xf0\xd9\x9f\x9e\x05\x96\x9b\xf0\x54\x87\xd6\xeb\x61\xce\x08\x09\xfe\xf6\x1e\xac\x30\x91\xcc\x57\xbc\x08\x9d\x14\xee\xbd\xd3\xe9\xce\xae\x43\xda\x74\x62\xb6\x89\x45\xde\x86\x5b\x9d\x36\x36\xfb\x81\xbd\xd1\x96\x84\xa2\x73\x0e\x47\xd1\x9b\x0e\xd8\xa8\xf7\xa4\xbd\x02\xa4\x0f\x9e\x17\xeb\x8a\xac\x50\xf3\x0b\x67\xde\xce\xf2\xad\xcb\x40\x38\x60\xa8\xae\x4e\xa6\x2b\x26\x24\xe1\x3b\x5c\xe8\xd6\x9f\xe8\x0e\x44\x1c\xf8\xe7\x2c\xe3\xb9\x74\x75\x9d\xc5\x8b\x3e\xff\x09\x00\x00\xff\xff\x00\xdd\x6c\x5a\x6a\x05\x00\x00")
+var _assets_css_index_css_min = []byte("\x1f\x8b\x08\x00\x00\x09\x6e\x88\x00\xff\x01\x00\x00\xff\xff\x00\x00\x00\x00\x00\x00\x00\x00")
 
 func assets_css_index_css_min_bytes() ([]byte, error) {
 	return bindata_read(
@@ -256,7 +296,7 @@ func assets_css_index_css_min() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindata_file_info{name: "assets/css/index.css.min", size: 1386, mode: os.FileMode(420), modTime: time.Unix(1428029995, 0)}
+	info := bindata_file_info{name: "assets/css/index.css.min", size: 0, mode: os.FileMode(420), modTime: time.Unix(1428033016, 0)}
 	a := &asset{bytes: bytes, info:  info}
 	return a, nil
 }
@@ -276,7 +316,7 @@ func assets_html_common_basic_layout_html() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindata_file_info{name: "assets/html/common/basic-layout.html", size: 869, mode: os.FileMode(420), modTime: time.Unix(1427932854, 0)}
+	info := bindata_file_info{name: "assets/html/common/basic-layout.html", size: 869, mode: os.FileMode(420), modTime: time.Unix(1428033016, 0)}
 	a := &asset{bytes: bytes, info:  info}
 	return a, nil
 }
@@ -296,7 +336,7 @@ func assets_html_index_html() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindata_file_info{name: "assets/html/index.html", size: 214, mode: os.FileMode(420), modTime: time.Unix(1428032316, 0)}
+	info := bindata_file_info{name: "assets/html/index.html", size: 214, mode: os.FileMode(420), modTime: time.Unix(1428047608, 0)}
 	a := &asset{bytes: bytes, info:  info}
 	return a, nil
 }
@@ -316,7 +356,7 @@ func assets_html_sandbox_html() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindata_file_info{name: "assets/html/sandbox.html", size: 230, mode: os.FileMode(420), modTime: time.Unix(1428030150, 0)}
+	info := bindata_file_info{name: "assets/html/sandbox.html", size: 230, mode: os.FileMode(420), modTime: time.Unix(1428033016, 0)}
 	a := &asset{bytes: bytes, info:  info}
 	return a, nil
 }
@@ -516,7 +556,7 @@ func assets_js_index_js() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindata_file_info{name: "assets/js/index.js", size: 7454, mode: os.FileMode(420), modTime: time.Unix(1428029334, 0)}
+	info := bindata_file_info{name: "assets/js/index.js", size: 7454, mode: os.FileMode(420), modTime: time.Unix(1428033019, 0)}
 	a := &asset{bytes: bytes, info:  info}
 	return a, nil
 }
@@ -536,7 +576,7 @@ func assets_js_index_js_min() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindata_file_info{name: "assets/js/index.js.min", size: 5109, mode: os.FileMode(420), modTime: time.Unix(1428029448, 0)}
+	info := bindata_file_info{name: "assets/js/index.js.min", size: 5109, mode: os.FileMode(420), modTime: time.Unix(1428033020, 0)}
 	a := &asset{bytes: bytes, info:  info}
 	return a, nil
 }
@@ -556,7 +596,7 @@ func assets_js_sandbox_js() (*asset, error) {
 		return nil, err
 	}
 
-	info := bindata_file_info{name: "assets/js/sandbox.js", size: 1097, mode: os.FileMode(420), modTime: time.Unix(1428028157, 0)}
+	info := bindata_file_info{name: "assets/js/sandbox.js", size: 1097, mode: os.FileMode(420), modTime: time.Unix(1428033019, 0)}
 	a := &asset{bytes: bytes, info:  info}
 	return a, nil
 }
@@ -635,6 +675,8 @@ func AssetNames() []string {
 var _bindata = map[string]func() (*asset, error){
 	"assets/css/common/bootstrap.min.css": assets_css_common_bootstrap_min_css,
 	"assets/css/common/bootstrap.min.css.min": assets_css_common_bootstrap_min_css_min,
+	"assets/css/common/wl-thema.css": assets_css_common_wl_thema_css,
+	"assets/css/common/wl-thema.css.min": assets_css_common_wl_thema_css_min,
 	"assets/css/common/wl.css": assets_css_common_wl_css,
 	"assets/css/fonts/glyphicons-halflings-regular.eot": assets_css_fonts_glyphicons_halflings_regular_eot,
 	"assets/css/fonts/glyphicons-halflings-regular.svg": assets_css_fonts_glyphicons_halflings_regular_svg,
@@ -707,6 +749,10 @@ var _bintree = &_bintree_t{nil, map[string]*_bintree_t{
 				"bootstrap.min.css": &_bintree_t{assets_css_common_bootstrap_min_css, map[string]*_bintree_t{
 				}},
 				"bootstrap.min.css.min": &_bintree_t{assets_css_common_bootstrap_min_css_min, map[string]*_bintree_t{
+				}},
+				"wl-thema.css": &_bintree_t{assets_css_common_wl_thema_css, map[string]*_bintree_t{
+				}},
+				"wl-thema.css.min": &_bintree_t{assets_css_common_wl_thema_css_min, map[string]*_bintree_t{
 				}},
 				"wl.css": &_bintree_t{assets_css_common_wl_css, map[string]*_bintree_t{
 				}},
