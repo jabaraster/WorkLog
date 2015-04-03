@@ -5,9 +5,10 @@ body {
   width: 100%;
   text-align: center;
   color: #ffffc8;
-  background: rgba(200, 150, 50, 0.9);
   /* 参考・http://kumacrow.blog111.fc2.com/blog-entry-278.html */
   text-shadow: 0 0 2px #c89632, 0 0 2px #c89632, 0 0 2px #c89632, 0 0 2px #c89632;
+  margin-top: 0;
+  padding-top: 0;
 }
 img.logo {
   display: block;
