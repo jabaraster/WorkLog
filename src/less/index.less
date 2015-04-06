@@ -5,3 +5,43 @@
     text-shadow: 0 0 2px @shadow-color, 0 0 2px @shadow-color, 0 0 2px @shadow-color, 0 0 2px @shadow-color;
 }
 
+div.Page {
+    margin-bottom: 50px;
+}
+
+div.TimeLine {
+    @time-line-color: rgba(50,150,50,1);
+    text-align: left;
+    position: absolute;
+    top: 0;
+    border: solid 2px @time-line-color;
+    color: @time-line-color;
+    background: lighten(@time-line-color, 50%);
+}
+
+table.TimeTable {
+    tr.hour:hover {
+        background: fadeOut(@accent-back-color,50%);
+    }
+    tr.hour {
+        cursor: pointer;
+        text-align: right;
+        height: 30px;
+
+        td.hour {
+            border: solid 1px @accent-fore-color;
+            color: @accent-fore-color;
+            background: @accent-back-color;
+            padding: 2px;
+            padding-right: 5px;
+            width: 15px;
+        }
+
+        td.schedule {
+            position: relative;
+            border: solid 1px @accent-back-color;
+            width: 200px;
+            padding: 0;
+        }
+    }
+}

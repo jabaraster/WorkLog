@@ -1,6 +1,11 @@
 WorkLog  
 〜作業時間をお手軽に記録〜
 
+# 準備
+
+npm install -g minifyjs
+npm install -g uglifycss
+
 # 禁止事項
 
 ## assets内のファイルに ``` logo ``` という文字列を含むファイルを作ること
@@ -19,4 +24,5 @@ WorkLog
 ```
 $ GOOS=linux GOARCH=amd64 go build -o WorkLog src/main.go
 ```
+
 
