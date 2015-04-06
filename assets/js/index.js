@@ -29,7 +29,8 @@ var TimeTable = React.createClass({displayName: "TimeTable",
     },
     getTimeLine: function(time) {
         var minutes = this.state.lines[time];
-        return minutes ? React.createElement(TimeLine, {height: minutes * 2 - 2 + "px", description: "hoge"}) : null;
+        var unitHeight = 44; // 15分辺りの高さ
+        return minutes ? React.createElement(TimeLine, {height: (minutes/15)*44-3 + "px", description: "hoge"}) : null;
     },
     render: function() {
         var months = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23];
@@ -71,12 +72,12 @@ var Page = React.createClass({displayName: "Page",
         return { value: 15 };
     },
     onChange: function(e) {
-        this.setState({ value: $(e.target).val() });
+        this.setState({ value: React.findDOMNode(this.refs.timeLength).value });
     },
     render: function() {
         return (
             React.createElement("div", {className: "Page container"}, 
-                React.createElement("input", {type: "range", min: "15", max: "120", step: "15", value: this.state.value, onChange: this.onChange}), 
+                React.createElement("input", {type: "range", ref: "timeLength", min: "15", max: "120", step: "15", value: this.state.value, onChange: this.onChange}), 
                 React.createElement("h1", null, this.state.value), 
                 React.createElement(TimeTable, null)
             )
