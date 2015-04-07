@@ -23,6 +23,10 @@ table.TimeTable {
     tr.hour:hover {
         background: fadeOut(@accent-back-color,50%);
     }
+    tr[class$=":00"] {
+        font-size: 150%;
+        font-weight: 150%;
+    }
     tr.hour {
         cursor: pointer;
         text-align: right;

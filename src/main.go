@@ -8,6 +8,7 @@ import (
 
     "./assets"
     "./env"
+    "./appweb"
 )
 
 func main() {
@@ -15,6 +16,8 @@ func main() {
 
     goji.Get("", http.RedirectHandler("/", http.StatusSeeOther))
     goji.Get("/", assets.BasicLayoutHtmlHandler("html/index.html"))
+
+    goji.Get("/timeline", appweb.HandleTimeLines);
 
     goji.Get("/css/*", assets.ContentTypeHandler("text/css"))
     goji.Get("/js/*", assets.ContentTypeHandler("text/javascript"))

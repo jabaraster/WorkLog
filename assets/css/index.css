@@ -12,6 +12,10 @@ div.TimeLine {
 table.TimeTable tr.hour:hover {
   background: rgba(200, 150, 50, 0.5);
 }
+table.TimeTable tr[class$=":00"] {
+  font-size: 150%;
+  font-weight: 150%;
+}
 table.TimeTable tr.hour {
   cursor: pointer;
   text-align: right;
